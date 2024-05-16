@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { PaginateModel } from 'mongoose';
-import { Events, EventDocument } from 'src/schemas/events.schema';
+import { Events, EventDocument } from '../../schemas/events.schema';
 import { EventsDTO } from './dto/event.dto';
 
 @Injectable()
