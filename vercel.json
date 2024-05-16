@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "env": {
-    "DB_URL": "mongodb+srv://elusiuve150993:CkeV6VyzgYOUP220@elif.axp2dbn.mongodb.net/"
-  },
   "builds": [
     {
       "src": "src/main.ts",
