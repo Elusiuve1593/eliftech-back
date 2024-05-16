@@ -1,5 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import mongoosePaginate from 'mongoose-paginate-v2';
+import * as mongoosePaginate from 'mongoose-paginate-v2';
 import { Registration } from './registration.schema';
 import mongoose from 'mongoose';
 
