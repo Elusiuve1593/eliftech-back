@@ -8,7 +8,7 @@ import {
 } from '@nestjs/common';
 import { EventsService } from './events.service';
 import { EventsDTO } from './dto/event.dto';
-import { Events } from 'src/schemas/events.schema';
+import { Events } from '../../schemas/events.schema';
 
 @Controller('events')
 export class EventsController {

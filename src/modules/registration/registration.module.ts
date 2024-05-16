@@ -5,8 +5,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 import {
   Registration,
   RegistrationSchema,
-} from 'src/schemas/registration.schema';
-import { Events, EventsSchema } from 'src/schemas/events.schema';
+} from '../../schemas/registration.schema';
+import { Events, EventsSchema } from '../../schemas/events.schema';
 
 @Module({
   imports: [

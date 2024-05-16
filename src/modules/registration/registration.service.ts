@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import {
   Registration,
   RegistrationDocument,
-} from 'src/schemas/registration.schema';
+} from '../../schemas/registration.schema';
 import { RegistrationDTO } from './dto/registration.dto';
 import { Model, PaginateModel } from 'mongoose';
 import { EventDocument, Events } from "../../schemas/events.schema";

@@ -8,7 +8,7 @@ import {
 } from '@nestjs/common';
 import { RegistrationService } from './registration.service';
 import { RegistrationDTO } from './dto/registration.dto';
-import { Registration } from 'src/schemas/registration.schema';
+import { Registration } from '../../schemas/registration.schema';
 
 @Controller('registration')
 export class RegistrationController {
