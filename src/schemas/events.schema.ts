@@ -25,8 +25,5 @@ export class Events {
   participants: Registration[];
 }
 
-const EventsSchema = SchemaFactory.createForClass(Events);
-
-EventsSchema.plugin(mongoosePaginate);
-
-export default EventsSchema;
+export const EventsSchema =
+  SchemaFactory.createForClass(Events).plugin(mongoosePaginate);
