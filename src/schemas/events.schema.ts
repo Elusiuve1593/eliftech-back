@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import * as mongoosePaginate from 'mongoose-paginate-v2';
 import { Registration } from './registration.schema';
-import mongoose from 'mongoose';
+import mongoose, { Document } from 'mongoose';
 
 export type EventDocument = Events & Document;
 
@@ -25,5 +25,8 @@ export class Events {
   participants: Registration[];
 }
 
-export const EventsSchema =
-  SchemaFactory.createForClass(Events).plugin(mongoosePaginate);
+const EventsSchema = SchemaFactory.createForClass(Events);
+
+EventsSchema.plugin(mongoosePaginate);
+
+export { EventsSchema };
